@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Movie } from './movie';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'movies';
+
+  watched = [
+    new Movie("Jumanji", "comedy", 2019),
+    new Movie("Rise of Skywalker", "action", 2019)
+  ];
+
+  toWatch = [
+    new Movie("1917", "action", 2019),
+    new Movie("Little Women", "drama", 2019)
+  ];
 }
